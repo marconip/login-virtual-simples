@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login teclado virtual</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tela-login">
+        <form name="login" class="acesso">
+            <input type="password" name="senha" placeholder="Digite a senha">
+            <input type="hidden" name="senhaEscondida">
+            <div class="teclado">
+                <input type="button" value="0" class="btn-senha" onclick="btn(value)">
+                <input type="button" value="0" class="btn-senha" onclick="btn(value)">
+                <input type="button" value="0" class="btn-senha" onclick="btn(value)">
+                <input type="button" value="0" class="btn-senha" onclick="btn(value)">
+                <input type="button" value="0" class="btn-senha" onclick="btn(value)">
+                <input type="button" value="X" class="apagar" onclick="reseta()">
+            </div>
+            <input type="button" name="submit" value="Entrar" class="button" onclick="entrar()">
+            <br />
+            <a href="javascript:void(0)" id="esqueci">Esqueci a senha</a>
+            <p id="erro"></p>
+        </form>
+    </div>
+
+    <section style="display: none">
+        <h1>Suas informações aqui</h1>
+        <ul>
+            <li>
+                <strong>Textos: </strong> <br />
+                Suas informações aqui.
+            </li>
+            <li>
+                <strong>Textos: </strong> <br />
+                Suas informações aqui.
+            </li>
+            <li>
+                <strong>Textos: </strong> <br />
+                Suas informações aqui.
+            </li>
+        </ul>
+    </section>
+
+    <script src="programacao.js"></script>
+</body>
+
+</html>

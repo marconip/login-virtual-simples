@@ -1,0 +1,131 @@
+:root {
+    --primaria: #00BCD4;
+    --fundo: #212121;
+    --textos: #999;
+    --teclas: #444;
+    --atencao: orange;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 28px;
+    color: var(--textos);
+    margin: 0px;
+    background: var(--fundo);
+}
+
+.tela-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+    background: var(--fundo);
+}
+
+input[name="senha"] {
+    width: 196px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: var(--primaria);
+    border: 0px;
+    border-bottom: 2px solid var(--primaria);
+    outline: none;
+    background-color: transparent;
+}
+
+.teclado {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.teclado input {
+    width: 60px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primaria);
+    border: 0px;
+    border-radius: 5px;
+    margin: 4px;
+    cursor: pointer;
+    background-color: var(--teclas);
+    outline: none;
+}
+
+.teclado input:hover {
+    color: var(--teclas);
+    background-color: var(--primaria);
+}
+
+.button {
+    width: 190px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    color: var(--teclas);
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    background: var(--primaria);
+}
+
+.button:hover{
+    background: var(--atencao);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textos);
+    margin-top: 6px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primaria);
+}
+
+#erro {
+    width: 204px;
+    position: absolute;
+    font-size: 20px;
+    color: var(--atencao);
+    margin: 0px;
+}
+
+ul {
+    padding: 0px 15px;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px solid var(--textos);
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+h1 {
+    color: var(--primaria);
+    text-align: center;
+    margin-bottom: 0px;
+}
